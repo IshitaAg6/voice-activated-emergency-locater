@@ -1,0 +1,184 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1600999632976-1d85e69c26d4?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvbWVufGVufDB8fDE2NjA2NzY0&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f4f7; /* Fallback color */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+}
+
+h1 {
+    color: #e91e63;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Geofencing Section */
+#geofence-section {
+    margin-top: 20px;
+}
+
+#geofence-section label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#geofence-toggle {
+    margin-left: 10px;
+}
+
+#geofence-settings.hidden {
+    display: none;
+}
+
+#geofence-settings {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+#geofence-settings label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+#geofence-settings input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Onboarding Section */
+#onboarding label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#onboarding input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+    transform: translateY(-2px);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+#transcript {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #e91e63;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 60px;
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Camera Feed */
+#camera-feed {
+    margin-top: 20px;
+}
+
+#camera-feed video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Pop-up Notification */
+#popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other elements */
+    animation: fadeIn 0.5s, fadeOut 0.5s 4.5s; /* Fade out after 4.5 seconds */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
